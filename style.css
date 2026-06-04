@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'poppins' , sans-serif;
+}
+
+body{
+    color: #ededed;
+    background-color: rgb(13, 6, 40);
+}
+
+h2{
+   
+    font-family: 'Times New Roman', Times, serif;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: dimgray;
+}
+
+a{
+    text-decoration: none;
+    color: #ededed ;
+    display: flex;
+    height: px;
+
+}
+
+a:hover{
+    
+    color: rgb(201, 243, 17);
+}
+
+#nav{
+   
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-left: 100px;
+  
+   
+}
+
+.first{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin:130px 0;
+    margin-top: 180px;
+}
+
+.first >div{
+    width: 30%;
+}
+
+
+.leftsec{
+    
+    margin-top: px;
+    width: 50%;
+    font-size: 28px;
+    padding: ;
+}
+  
+.rightsec{
+    margin-top: 20px;
+    width: 50%;
+    
+    
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top:180px;
+}
+
+.rightsec img{
+    border-radius: 28px;
+    background-color: black;
+    padding: 3px;
+     border: 2px solid #38bdf8;
+     box-shadow: 1px 8px 16px  rgba(56, 189, 248, 0.5);
+}
+
+.purple{
+    color: rgb(180, 107, 249);
+   
+}
+
+.grey{
+    color: gray;
+}
+#element{
+     color: rgb(180, 107, 249);
+}
+
+.second{
+    max-width: 80vw;
+    margin: auto;
+    margin-bottom: 50px ;
+    
+    
+}
+
+main hr {
+    border: 0;
+    background-color: #9c97f1;
+    height: 1.2px;
+    margin: 60px 84px;
+}
+
+.second h1{
+    font-size: 1.9rem;
+    color: rgb(113, 217, 238);
+    text-decoration: ;
+}
+
+
+.second{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.arrow{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* .about-box
+    margin: auto;
+   background: #1e293b;
+    color: #f8fafc;
+    height: 200px;
+    width: 200px;
+       display: flex;
+        justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: 2px solid rgb(10, 234, 160);
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px; */
+
+
+    .about-box {
+    width: 400px;
+    min-height: 150px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+    border: 2px solid #38bdf8;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(56, 189, 248, 0.5); /* X-offset, Y-offset, blur, color */
+
+}
+
+.about-box p{
+     text-align: center;
+     font-size: 17px;
+  
+}
+
+.orange{    
+    color: rgb(193, 102, 102);
+}
+
+.Web{
+    font-size: 18px;
+    color: #9c97f1;
+
+}
+
+.third {
+    text-align: center;
+    margin: auto;
+
+    color: rgb(113, 217, 238);
+    text-decoration: ;
+   
+}
+
+
+
+.skill-box {
+    width: 400px;
+    margin: auto;
+    min-height: 150px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+    border: 2px solid #38bdf8;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(56, 189, 248, 0.5);
+   
+}
+
+.skill-list p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.skill{
+    color: rgb(210, 229, 105);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.contact-box {
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #1e293b;
+    color: white;
+    border: 2px solid #38bdf8;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(56, 189, 248, 0.5);
+}
+
+.contact-box p {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+.fourth{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    color: rgb(113, 217, 238);
+    text-decoration: ;
+    }
