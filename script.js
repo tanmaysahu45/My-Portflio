@@ -4,13 +4,11 @@
 const menuToggle = document.getElementById('menu-toggle');
 const navLinks = document.getElementById('nav');
 
-// Toggle Open/Close on Button Click
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
 });
 
-// Automatically close menu when any internal navigation link is clicked
 document.querySelectorAll('#nav a').forEach(link => {
     link.addEventListener('click', () => {
         menuToggle.classList.remove('active');
@@ -19,7 +17,35 @@ document.querySelectorAll('#nav a').forEach(link => {
 });
 
 // ========================================================
-// 2. HERO HOME SECTION - TITLE TYPING EFFECT
+// 2. SCROLLSPY - ACTIVE SECTION NAVBAR COLOR SWITCHER
+// ========================================================
+const sections = document.querySelectorAll('.target-section');
+const navItems = document.querySelectorAll('.nav-links a');
+
+window.addEventListener('scroll', () => {
+    let currentSectionId = '';
+    
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        
+        // Window scroll offset detection mechanism with 120px threshold margin
+        if (window.scrollY >= (sectionTop - 150)) {
+            currentSectionId = section.getAttribute('id');
+        }
+    });
+
+    // Remove active class from all items and add to the current viewing section link
+    navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === `#${currentSectionId}`) {
+            item.classList.add('active');
+        }
+    });
+});
+
+// ========================================================
+// 3. HERO HOME SECTION - TITLE TYPING EFFECT
 // ========================================================
 const typed = new Typed('#element', {
   strings: [
@@ -33,7 +59,7 @@ const typed = new Typed('#element', {
 });
 
 // ========================================================
-// 3. ABOUT BOX DYNAMIC MATRIX
+// 4. ABOUT BOX DYNAMIC MATRIX
 // ========================================================
 new Typed('#about-text', {
   strings: [
