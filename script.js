@@ -17,25 +17,30 @@ document.querySelectorAll('#nav a').forEach(link => {
 });
 
 // ========================================================
-// 2. SCROLLSPY - ACTIVE SECTION NAVBAR COLOR SWITCHER
+// 2. SCROLLSPY - FIXED FLUID COLOR SWITCHER CALCULATION
 // ========================================================
 const sections = document.querySelectorAll('.target-section');
 const navItems = document.querySelectorAll('.nav-links a');
 
 window.addEventListener('scroll', () => {
-    let currentSectionId = '';
+    let currentSectionId = 'home';
     
+    // Exact view detection engine based on screen bounding client viewports
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.clientHeight;
+        const rect = section.getBoundingClientRect();
         
-        // Window scroll offset detection mechanism with 120px threshold margin
-        if (window.scrollY >= (sectionTop - 150)) {
+        // Checking if section top is near or crossing header boundary view zone
+        if (rect.top <= 160) {
             currentSectionId = section.getAttribute('id');
         }
     });
 
-    // Remove active class from all items and add to the current viewing section link
+    // Code forcefully catches bottom hit to highlight 'Contact' without delay
+    if ((window.innerHeight + window.scrollY) >= document.documentElement.scrollHeight - 50) {
+        currentSectionId = 'contact';
+    }
+
+    // Swapping classes
     navItems.forEach(item => {
         item.classList.remove('active');
         if (item.getAttribute('href') === `#${currentSectionId}`) {

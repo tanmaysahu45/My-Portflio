@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* ========================================================
-   GLOBAL NEON CYBERPUNK THEME RESET
+   GLOBAL CYBERPUNK RESET & RESPONSIVENESS
    ======================================================== */
 * {
     margin: 0;
@@ -29,7 +29,7 @@ body {
     border-radius: 10px;
 }
 
-/* HEADER NAVIGATION & RESPONSIVE HAMBURGER */
+/* HEADER NAVBAR */
 .header {
     position: fixed;
     top: 0;
@@ -56,7 +56,7 @@ body {
     color: #00e676;
 }
 
-/* Hamburger Icon Design */
+/* Hamburger Icon Design (Mobile) */
 .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@ body {
     border-radius: 4px;
 }
 
-/* SCROLL COLOUR CHANGE: Active link tracking highlights */
+/* ACTIVE SCROLL EFFECT - EXACT GREEN NEON GLOW */
 .nav-links a.active {
     color: #00e676 !important;
     text-shadow: 0 0 15px rgba(0, 230, 118, 0.8);
@@ -129,7 +129,7 @@ body {
     color: #00e676;
 }
 
-/* MAIN BODY HEIGHT LAYOUT */
+/* MAIN LAYOUT POSITIONING */
 main {
     margin-top: 75px;
 }
@@ -228,7 +228,7 @@ hr {
     border: 4px solid #0b0f19;
 }
 
-/* 2. SERVICES BANNER MODULE */
+/* 2. SERVICES OFFER BLOCK */
 .offer-banner {
     background: linear-gradient(135deg, rgba(17, 24, 39, 0.8), rgba(11, 15, 25, 0.9));
     border: 1px solid rgba(0, 230, 118, 0.2);
@@ -301,7 +301,7 @@ hr {
     color: #fff;
 }
 
-/* CARDS STACK CONTAINERS */
+/* LIVE CARD CONTAINERS */
 .projects-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -333,7 +333,7 @@ hr {
 .dynamic-box { border: 1px dashed rgba(255, 255, 255, 0.15); background: transparent; }
 .client-btn { color: #8a2be2; }
 
-/* 3. ABOUT & SKILLS CONTROLS */
+/* 3. ABOUT & SKILLS MODULES */
 .about-box, .skill-box {
     background: rgba(17, 24, 39, 0.4);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -347,7 +347,7 @@ hr {
 .Web { color: #00e676; font-weight: 600; }
 .skill p { font-size: 13px; color: #e5e7eb; margin-bottom: 12px; line-height: 1.5; }
 
-/* 5. CONTACT MODULE STRUCTURE */
+/* 5. CONTACT ARCHITECTURE GRID */
 .contact-box {
     display: flex;
     flex-direction: column;
@@ -382,7 +382,7 @@ hr {
 .contact-card-link strong { color: #fff; font-size: 14px; margin-bottom: 4px; }
 .contact-card-link span { color: #9ca3af; font-size: 12px; word-break: break-all; }
 
-/* LOCATION BLOCK */
+/* LOCATION RE-ALIGN */
 .location-container {
     text-align: center;
     background: rgba(0, 230, 118, 0.03);
@@ -398,7 +398,7 @@ hr {
 .loc-badge.country { color: #9ca3af; font-size: 12px; margin-top: 4px; }
 
 /* ========================================================
-   LAPTOP / PC DESKTOP LAYOUT RESPONSIVENESS
+   LAPTOP PC MEDIA MONITOR BREAKPOINTS
    ======================================================== */
 @media (min-width: 768px) {
     .menu-toggle { display: none; } 
@@ -416,22 +416,29 @@ hr {
     .nav-links a { font-size: 16px; }
     .header { padding: 20px 8%; }
     main { margin-top: 90px; }
-    section { padding: 80px 8%; }
+    section { padding: 80px 10%; } 
     
     .section-title h2 { font-size: 36px; }
-    .first { flex-direction: row; text-align: left; justify-content: space-between; }
+    
+    .first { 
+        flex-direction: row; 
+        text-align: left; 
+        justify-content: space-between; 
+        gap: 50px;
+    }
     .leftsec { width: 55%; }
-    .leftsec h1 { font-size: 44px; }
-    .profession { font-size: 22px; }
+    .leftsec h1 { font-size: 46px; }
+    .profession { font-size: 24px; }
     .rightsec { width: 40%; }
-    .img-frame { width: 280px; height: 280px; }
+    .img-frame { width: 290px; height: 290px; }
     
     .offer-banner h3 { font-size: 26px; }
     .offer-banner p { font-size: 16px; }
     
-    .projects-container { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .projects-container { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
     .contact-methods { grid-template-columns: 1fr 1fr; gap: 20px; }
     .about-box, .skill-box { padding: 40px; }
+    .about-box #about-text { font-size: 16px; }
 }
 
 @media (min-width: 1024px) {
