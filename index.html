@@ -8,10 +8,16 @@
 </head>
 <body>
 
-  <!-- HEADER NAVIGATION -->
   <header class="header">
     <h2 class="logo">Tanmay<span>.dev</span></h2>
-    <nav id="nav">
+    
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle Navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav id="nav" class="nav-links">
       <a href="#home">Home</a>
       <a href="#offers">Services</a>
       <a href="#about">About</a>
@@ -22,7 +28,6 @@
 
   <main>
 
-    <!-- 1. HERO HOME SECTION -->
     <section class="first" id="home">
       <div class="leftsec">
         <span class="welcome-tag">Welcome to my Digital Space</span>
@@ -36,7 +41,8 @@
       </div>
     </section>
 
-    <!-- 2. CLIENT OFFER BANNER & SERVICES -->
+    <hr>
+
     <section class="fifth" id="offers">
       <div class="section-title">
         <span>Premium Services</span>
@@ -61,7 +67,6 @@
       <h3 class="sub-heading">Featured Live Deployments</h3>
       <div class="projects-container">
         
-        <!-- Sahu Hotel App Card -->
         <div class="project-card">
           <div class="card-glow"></div>
           <div class="project-icon">🍽️</div>
@@ -70,7 +75,6 @@
           <a href="https://tanmaysahu45.github.io/SAHU-HOTEL/home.html" target="_blank" class="live-link-btn">Launch Live Site 🔗</a>
         </div>
 
-        <!-- Next Project Slot Placeholder -->
         <div class="project-card dynamic-box">
           <div class="card-glow"></div>
           <div class="project-icon">🚀</div>
@@ -84,7 +88,6 @@
 
     <hr>
 
-    <!-- 3. ABOUT SECTION -->
     <section class="second" id="about">
       <div class="section-title">
         <span>Biographical Specs</span>
@@ -97,7 +100,6 @@
 
     <hr>
 
-    <!-- 4. SKILLS SECTION -->
     <section class="third" id="skill">
       <div class="section-title">
         <span>Technical Stack</span>
@@ -115,7 +117,6 @@
 
     <hr>
 
-    <!-- 5. CONTACT SECTION WITH DIRECT SOCIAL HANDLES -->
     <section class="fourth" id="contact">
       <div class="section-title">
         <span>Get In Touch</span>
@@ -123,7 +124,6 @@
       </div>
       <div class="contact-box">
         
-        <!-- Communication Grid (Email, Phone, Instagram, YouTube) -->
         <div class="contact-methods">
           <a href="mailto:tanmaysahu652@gmail.com" class="contact-card-link">
             <span class="icon">📧</span>
@@ -137,22 +137,19 @@
             <span>+91 8319332387</span>
           </a>
 
-          <!-- Instagram Dark Theme Redirect Profile Link -->
           <a href="https://www.instagram.com/Tanmay.sahu.45/" target="_blank" class="contact-card-link instagram-card">
             <span class="icon">📸</span>
             <strong>Instagram</strong>
             <span>@Tanmay.sahu.45</span>
           </a>
 
-          <!-- YouTube Channel Direct Profile Link -->
-          <a href="https://www.youtube.com/@tanmay3.0" target="_blank" class="contact-card-link youtube-card">
+          <a href="http://googleusercontent.com/youtube.com/2" target="_blank" class="contact-card-link youtube-card">
             <span class="icon">▶️</span>
-            <strong>YouTube Channel</strong>
+            <strong>YouTube</strong>
             <span>@tanmay3.0</span>
           </a>
         </div>
         
-        <!-- Clean & Accurate Location Block -->
         <div class="location-container">
           <span class="loc-icon">📍 Global HQ Location</span>
           <div class="loc-badge">Jhurre Colony</div>
@@ -164,7 +161,6 @@
 
   </main>
 
-  <!-- EXTERNAL JAVASCRIPT ANIMATION CDN -->
   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
   <script src="script.js"></script>
 </body>

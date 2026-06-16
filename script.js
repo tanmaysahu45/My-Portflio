@@ -1,5 +1,25 @@
 // ========================================================
-// 1. HERO HOME SECTION - TITLE TYPING EFFECT
+// 1. MOBILE NAVBAR HAMBURGER DROPDOWN LOGIC
+// ========================================================
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav');
+
+// Toggle Open/Close on Button Click
+menuToggle.addEventListener('click', () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+});
+
+// Automatically close menu when any internal navigation link is clicked
+document.querySelectorAll('#nav a').forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+
+// ========================================================
+// 2. HERO HOME SECTION - TITLE TYPING EFFECT
 // ========================================================
 const typed = new Typed('#element', {
   strings: [
@@ -13,7 +33,7 @@ const typed = new Typed('#element', {
 });
 
 // ========================================================
-// 2. ABOUT BOX DYNAMIC MATRIX
+// 3. ABOUT BOX DYNAMIC MATRIX
 // ========================================================
 new Typed('#about-text', {
   strings: [
