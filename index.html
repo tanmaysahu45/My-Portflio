@@ -3,73 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tanmay Sahu | Premium Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="header"><h2>Protflio!</h2>
+  <!-- HEADER NAVIGATION -->
+  <header class="header">
+    <h2 class="logo">Tanmay<span>.dev</span></h2>
     <nav id="nav">
       <a href="#home">Home</a>
+      <a href="#offers">Services</a>
       <a href="#about">About</a>
-      <a href="#skill">Skill</a>
-      <a href="#business">Business</a> 
+      <a href="#skill">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <main>
 
+    <!-- 1. HERO HOME SECTION -->
     <section class="first" id="home">
       <div class="leftsec">
-        Hi, My name is <span class="purple">Tanmay </span>
-        
-
-        <div>and I am a Passionate</div>
-        
-        <span id="element"></span>
+        <span class="welcome-tag">Welcome to my Digital Space</span>
+        <h1>Hi, I am <span class="purple">Tanmay Sahu</span></h1>
+        <div class="profession">A Passionate <span id="element"></span></div>
       </div>
       <div class="rightsec">
-        <img src="download.jpg" alt="">
+        <div class="img-frame">
+          <img src="download.jpg" alt="Tanmay Sahu">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. CLIENT OFFER BANNER & SERVICES -->
+    <section class="fifth" id="offers">
+      <div class="section-title">
+        <span>Premium Services</span>
+        <h2>Work With Me</h2>
+      </div>
+      
+      <div class="offer-banner">
+        <div class="badge">Limited Time Offer 🔥</div>
+        <h3>Need a Professional Website for Your Business?</h3>
+        <p>I build custom, high-speed, and fully responsive platforms engineered to scale your brand identity. Since I am expanding my freelance portfolio, I am currently delivering premium deployments at an <strong>unbeatable, budget-friendly price point (Kam Dam Mein)</strong>!</p>
+        
+        <div class="services-tags">
+          <span>🍽️ Restaurant Web Apps</span>
+          <span>🛒 Grocery & Retail Stores</span>
+          <span>💼 Personal Portfolios</span>
+          <span>📝 Blogs & Landing Pages</span>
+        </div>
+        
+        <a href="#contact" class="offer-btn">Hire Me Instantly ⚡</a>
+      </div>
+
+      <h3 class="sub-heading">Featured Live Deployments</h3>
+      <div class="projects-container">
+        
+        <!-- Sahu Hotel App Card -->
+        <div class="project-card">
+          <div class="card-glow"></div>
+          <div class="project-icon">🍽️</div>
+          <h3>Sahu Hotel Web App</h3>
+          <p>A specialized digital restaurant interface deployed on GitHub Pages. Built to handle interactive navigation, menu layouts, and fully customized frontend assets.</p>
+          <a href="https://tanmaysahu45.github.io/SAHU-HOTEL/home.html" target="_blank" class="live-link-btn">Launch Live Site 🔗</a>
+        </div>
+
+        <!-- Next Project Slot Placeholder -->
+        <div class="project-card dynamic-box">
+          <div class="card-glow"></div>
+          <div class="project-icon">🚀</div>
+          <h3>Your Business App Here</h3>
+          <p>This slot is reserved for your retail shop, business catalog, or startup landing page. Get standard clean coding structures at a minimal budget.</p>
+          <a href="#contact" class="live-link-btn client-btn">Book This Slot</a>
+        </div>
+
       </div>
     </section>
 
     <hr>
 
+    <!-- 3. ABOUT SECTION -->
     <section class="second" id="about">
-    <h1>About Me </h1>
-
-    <div class="arrow">↓</div>
-
-    <div class="about-box">
-    <span id="about-text"></span>
-</div>
-  
+      <div class="section-title">
+        <span>Biographical Specs</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-box">
+        <span id="about-text"></span>
+      </div>
     </section>
 
     <hr>
 
+    <!-- 4. SKILLS SECTION -->
     <section class="third" id="skill">
-    <h1>My Skills</h1>
-      <div class="arrow">↓</div>
- <div class="skill-box">
-    <span id="skill-text"></span>
-</div>
- <hr>
-</section>
+      <div class="section-title">
+        <span>Technical Stack</span>
+        <h2>My Skills</h2>
+      </div>
+      <div class="skill-box">
+        <div class="skill">
+          <p>⚡ Semantic HTML5 DOM Structuring</p>
+          <p>⚡ CSS3 Grid Layouts & Glowing Responsive Design</p>
+          <p>⚡ Vanilla JavaScript (ES6+) Functions, Arrays & Loops</p>
+          <p>⚡ API Integration, Dynamic Logic Building & Event Handling</p>
+        </div>
+      </div>
+    </section>
 
-<section class="fourth" id="contact">
-    <h1>Contact Me</h1>
-    <div class="arrow">↓</div>
-    <div class="contact-box">
-        <p>Email: example@example.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Location: Your City, Your Country</p>
-    </div>
-</section>
+    <hr>
+
+    <!-- 5. CONTACT SECTION WITH DIRECT SOCIAL HANDLES -->
+    <section class="fourth" id="contact">
+      <div class="section-title">
+        <span>Get In Touch</span>
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-box">
+        
+        <!-- Communication Grid (Email, Phone, Instagram, YouTube) -->
+        <div class="contact-methods">
+          <a href="mailto:tanmaysahu652@gmail.com" class="contact-card-link">
+            <span class="icon">📧</span>
+            <strong>Email</strong>
+            <span>tanmaysahu652@gmail.com</span>
+          </a>
+          
+          <a href="tel:+918319332387" class="contact-card-link">
+            <span class="icon">📞</span>
+            <strong>Phone</strong>
+            <span>+91 8319332387</span>
+          </a>
+
+          <!-- Instagram Dark Theme Redirect Profile Link -->
+          <a href="https://www.instagram.com/Tanmay.sahu.45/" target="_blank" class="contact-card-link instagram-card">
+            <span class="icon">📸</span>
+            <strong>Instagram</strong>
+            <span>@Tanmay.sahu.45</span>
+          </a>
+
+          <!-- YouTube Channel Direct Profile Link -->
+          <a href="https://www.youtube.com/@tanmay3.0" target="_blank" class="contact-card-link youtube-card">
+            <span class="icon">▶️</span>
+            <strong>YouTube Channel</strong>
+            <span>@tanmay3.0</span>
+          </a>
+        </div>
+        
+        <!-- Clean & Accurate Location Block -->
+        <div class="location-container">
+          <span class="loc-icon">📍 Global HQ Location</span>
+          <div class="loc-badge">Jhurre Colony</div>
+          <div class="loc-badge district">Chhindwara, Madhya Pradesh</div>
+          <div class="loc-badge country">India - 480441</div>
+        </div>
+      </div>
+    </section>
 
   </main>
-   <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+
+  <!-- EXTERNAL JAVASCRIPT ANIMATION CDN -->
+  <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
